@@ -13,9 +13,13 @@ Table of Contents
 Installing VSCode
 --------
 
-Ill do this later lol
+1. Go to the [VSCode Website](https://code.visualstudio.com/) 
+![](./lab1-images/VSCode1.png)
+2. Donwnload the version for your specific operating system
+
 
 Remotely Connecting
 ------
 
 1. Look up your course specific account using [this link.](https://sdacs.ucsd.edu/~icc/index.php)
+2. 
