@@ -1,6 +1,6 @@
 Lab Report 1
 ==========
----
+
 In this lab, I installed VSCode, remotely connected to a course-specific account in ieng6, and tested out basic commands wihtin the remote connected computer using my macbook.
 
 Table of Contents
