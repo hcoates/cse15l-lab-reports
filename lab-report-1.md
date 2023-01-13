@@ -44,7 +44,7 @@ Trying Commands
 1. Once you have remotely connected you can test out some common commands
 * pwd
 * cd ~
-* ..
+* cd ..
 * ls
 
 ![](./lab1-images/cmds.png)
