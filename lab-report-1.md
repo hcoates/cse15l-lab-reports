@@ -17,7 +17,7 @@ Installing VSCode
 
 ![](./lab1-images/VSCode1.png)
 
-2. Donwnload the version for your specific operating system, once its downloaded VSCode should look like this
+2. Download the version for your specific operating system, once its downloaded VSCode should look like this
 
 ![](./lab1-images/VSCode2.png)
 
