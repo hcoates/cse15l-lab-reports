@@ -5,11 +5,11 @@ Lab Report 2
 Table of Contents
 --------------
 
-* Part 1 : String Server
-* Part 2 : Bugs
-* Part 3 : New Concepts
+* String Server
+* Bugs
+* New Concepts
 
-Part 1: String Server
+String Server
 --------
 
 **Code for StringServer:**
@@ -38,7 +38,7 @@ _How do the values of any relevant fields of the class change from this specific
 
 In this specific request the args[0] value in the main method is set to 1800 and the port value is set to 1800. The result value in handleRequest method concats How are you? and a new line value the String which is returned and displayed on the web server. Parameters adds s and How are you? to its string array.
 
-Part 2: Bugs
+Bugs
 ------
 
 **A failure-inducing input for the buggy program, as a JUnit test and any associated code:**
@@ -89,7 +89,7 @@ Briefly describe why the fix addresses the issue:
 By adding a temporary int array it allows arr to be reversed without losing any values in arr. When there is no temp used in order to reverse arr it will loose the first value that is switched and therefore not reversing the array fully because the first value will be lost.
 
 
-Part 3: New Concepts
+New Concepts
 ------
 
 In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.
