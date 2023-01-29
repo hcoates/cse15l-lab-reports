@@ -57,13 +57,39 @@ public void testReverseInPlace() {
   assertArrayEquals(new int[]{ 3 }, input1);
 }
 ````
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+**The symptom, as the output of running the tests:**
 
-The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-Briefly describe why the fix addresses the issue.
+![](./lab3-images/error.png)
+
+**The bug, as the before-and-after code change required to fix it:**
+
+Before:
+````
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+  }
+}
+````
+
+After:
+````
+static void reverseInPlace(int[] arr) {
+  int[] temp = arr.clone();
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = temp[arr.length - i - 1];
+  }
+}
+````
+
+Briefly describe why the fix addresses the issue:
+
+By adding a temporary int array it allows arr to be reversed without losing any values in arr. When there is no temp used in order to reverse arr it will loose the first value that is switched and therefore not reversing the array fully because the first value will be lost.
 
 
 Part 3: New Concepts
 ------
 
 In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.
+
+In lab 2 we created our own web servers. Prior to this lab I did not know how to create a web server and access different parts of the URL. Through lab 2, I was able to practice making a webserver and searching the url for the path and queries which I did not know how to do before. Also through this lab I learned the different parts of the URL and developed a better understanding of how each part is utilized by the server.
