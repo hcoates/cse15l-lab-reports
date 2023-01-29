@@ -29,11 +29,13 @@ _What are the relevant arguments to those methods, and the values of any relevan
 The relevant arguments for the main method is the args String input that is the port used for creating the server. The relevant arguments for the handleRequest method are String result which holds a single string that gets added to by incoming requests found in the path. The other relevant value in handleRequest is String[] parameters which holds the query value found in the url.
 
 _How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why._
+
 In this specific request the args[0] value in the main method is set to 1800 and the port value is set to 1800. The result value in handleRequest method concats Hello and a new line value the String which is returned and displayed on the web server. Parameters adds s and Hello to its string array.
 
 ![](./lab3-images/message1.png)
 
 _How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why._
+
 In this specific request the args[0] value in the main method is set to 1800 and the port value is set to 1800. The result value in handleRequest method concats How are you? and a new line value the String which is returned and displayed on the web server. Parameters adds s and How are you? to its string array.
 
 Part 2: Bugs
