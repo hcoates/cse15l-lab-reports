@@ -13,8 +13,41 @@ String Server
 --------
 
 **Code for StringServer:**
+````
+import java.io.IOException;
+import java.net.URI;
 
-![](./lab3-images/code.png)
+class Handler implements URLHandler {
+    String result = "";
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return String.format(result);
+        }
+        if (url.getPath().equals("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            result = result + parameters[1] + "\n";
+            return String.format(result);
+        } else {
+            System.out.println("Path: " + url.getPath());
+            return "404 Not Found!";
+        }
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+````
 
 **Screenshots of using /add-messages:**
 
