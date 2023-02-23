@@ -23,10 +23,14 @@ Steps
 [cs15lwi23apk@ieng6-203]:~:342$ rm -rf l<tab>
 ````
 
+The command rm -rf lab7 is used to delete the directory lab7 and recursively the files inside it.
+
 2 Setup Fork the repository
 ------
 
 <img width="836" alt="Screenshot 2023-02-23 at 11 29 02 AM" src="https://user-images.githubusercontent.com/114765933/221010562-43bd1efc-0724-479c-b33d-d0edd045ce21.png">
+
+From the lab7 repository linked on the week 7 lab directions, I forked the repository.
 
 4 Log into ieng6
 ------
